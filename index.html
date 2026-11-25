@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maritime Port Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>⚓ Maritime Port Container Management</h1>
+    <p>Container Tracking and Port Operations</p>
+</header>
+
+<nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#add">Add Container</a>
+    <a href="#records">Container Records</a>
+    <a href="#history">Movement History</a>
+</nav>
+
+<div class="container">
+
+    <!-- Dashboard -->
+    <section id="dashboard">
+        <h2>Port Dashboard</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Total Containers</h3>
+                <h1>120</h1>
+            </div>
+
+            <div class="card">
+                <h3>Arrived</h3>
+                <h1>75</h1>
+            </div>
+
+            <div class="card">
+                <h3>In Yard</h3>
+                <h1>30</h1>
+            </div>
+
+            <div class="card">
+                <h3>Departed</h3>
+                <h1>15</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add Container -->
+    <section id="add">
+        <h2>Add New Container</h2>
+
+        <form>
+            <label>Container ID</label>
+            <input type="text" placeholder="Enter Container ID">
+
+            <label>Vessel Name</label>
+            <input type="text" placeholder="Enter Vessel Name">
+
+            <label>Yard Location</label>
+            <input type="text" placeholder="Enter Yard Location">
+
+            <label>Transport Mode</label>
+            <select>
+                <option>Select Transport</option>
+                <option>Ship</option>
+                <option>Truck</option>
+                <option>Train</option>
+            </select>
+
+            <label>Container Status</label>
+            <select>
+                <option>Awaiting Arrival</option>
+                <option>Arrived</option>
+                <option>In Yard</option>
+                <option>Departed</option>
+            </select>
+
+            <button type="button">Add Container</button>
+        </form>
+    </section>
+
+    <!-- Container Records -->
+    <section id="records">
+        <h2>Container Records</h2>
+
+        <input type="text" placeholder="Search Container ID">
+
+        <table>
+            <tr>
+                <th>Container ID</th>
+                <th>Vessel</th>
+                <th>Yard</th>
+                <th>Transport</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>CONT001</td>
+                <td>Ocean Star</td>
+                <td>Yard A1</td>
+                <td>Ship</td>
+                <td>Arrived</td>
+            </tr>
+
+            <tr>
+                <td>CONT002</td>
+                <td>Sea Queen</td>
+                <td>Yard B2</td>
+                <td>Truck</td>
+                <td>In Yard</td>
+            </tr>
+
+            <tr>
+                <td>CONT003</td>
+                <td>Ocean Blue</td>
+                <td>Yard C3</td>
+                <td>Train</td>
+                <td>Departed</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Arrival and Departure -->
+    <section>
+        <h2>Arrival and Departure</h2>
+
+        <table>
+            <tr>
+                <th>Container ID</th>
+                <th>Arrival Date</th>
+                <th>Departure Date</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>CONT001</td>
+                <td>25-11-2026</td>
+                <td>-</td>
+                <td>Arrived</td>
+            </tr>
+
+            <tr>
+                <td>CONT002</td>
+                <td>24-11-2026</td>
+                <td>-</td>
+                <td>In Yard</td>
+            </tr>
+
+            <tr>
+                <td>CONT003</td>
+                <td>22-11-2026</td>
+                <td>24-11-2026</td>
+                <td>Departed</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Movement History -->
+    <section id="history">
+        <h2>Container Movement History</h2>
+
+        <div class="history">
+            <p>CONT001 - Container added - 25-11-2026</p>
+            <p>CONT001 - Container arrived - 25-11-2026</p>
+            <p>CONT002 - Container moved to Yard B2 - 24-11-2026</p>
+            <p>CONT003 - Container departed - 24-11-2026</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>Maritime Port Container Management System</p>
+    <p>College Project</p>
+</footer>
+
+</body>
+</html>
